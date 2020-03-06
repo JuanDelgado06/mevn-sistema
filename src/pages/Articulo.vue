@@ -400,7 +400,7 @@ export default {
           axios
             .put('articulo/update', {
               _id: this.id,
-              categoria: this.categoria,
+              categoria: this.categoria.value,
               codigo: this.codigo,
               nombre: this.nombre,
               descripcion: this.descripcion,
@@ -429,7 +429,7 @@ export default {
           // Codigo para guardar
           axios
             .post('articulo/add', {
-              categoria: this.categoria,
+              categoria: this.categoria.value,
               codigo: this.codigo,
               nombre: this.nombre,
               descripcion: this.descripcion,
