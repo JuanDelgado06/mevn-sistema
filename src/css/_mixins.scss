@@ -1,0 +1,59 @@
+//Media Queries
+$mini: 321px;
+$small-mobile: 400px;
+$mobile: 600px;
+$table: 768px;
+$laptop: 900px;
+$desktop: 1224px;
+
+
+@mixin respond-to($media) {
+    @if $media == mini {    
+        @media only screen and (min-width: $mini) { @content; }
+    }
+    @if $media == little {
+        @media only screen and (min-width: $small-mobile) { @content; }
+    }
+    @if $media == small {
+        @media only screen and (min-width: $mobile) { @content; }
+    }
+    @if $media == mid {
+        @media only screen and (min-width: $table) { @content; }
+    }
+    @if $media == semiBig {
+        @media only screen and (min-width: $laptop) { @content; }
+    }
+    @if $media == big {
+        @media only screen and (min-width: $desktop) { @content; }
+    }
+}
+
+@mixin respond-to-height($media) {
+    @if $media == mini {    
+        @media only screen and (min-height: $mini) { @content; }
+    }
+    @if $media == small {
+        @media only screen and (min-height: $mobile) { @content; }
+    }
+    @if $media == mid {
+        @media only screen and (min-height: $table) { @content; }
+    }
+    @if $media == semiBig {
+        @media only screen and (min-height: $laptop) { @content; }
+    }
+}
+
+@mixin imgBg($imagen, $height: auto, $bgPos: center center) {
+    background-image: url($imagen);
+    background-repeat: no-repeat;
+    background-position: $bgPos;
+    background-size: contain;
+    min-height: $height;
+}
+// ============== EXAMPLE ======================= //
+
+/* .london {
+    @include imgBg('/img/img1.jpg', 600px, top center);
+} */
+
+// ============== EXAMPLE ======================= //
