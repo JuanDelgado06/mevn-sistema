@@ -67,6 +67,8 @@ module.exports = function(ctx) {
         "QInput",
         "QSelect",
         "QForm",
+        'QFab',
+        'QFabAction'
       ],
 
       directives: ["Ripple", "ClosePopup"],

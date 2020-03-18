@@ -112,13 +112,13 @@
             to="#"
             class="in-expansion-item"
           >
-            <router-link to="categoria">
+            <router-link to="ingreso">
               <q-item-section avatar>
                 <q-icon name="home" />
               </q-item-section>
             </router-link>
 
-            <router-link to="home">
+            <router-link to="ingreso">
               <q-item-section>
                 <q-item-label>
                   Ingresos

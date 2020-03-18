@@ -47,6 +47,15 @@ const routes = [
           administrador: true,
           almacenero: true
         }
+      },
+      {
+        path: 'ingreso',
+        name: 'ingreso',
+        component: () => import('pages/Ingreso.vue'),
+        meta: {
+          administrador: true,
+          almacenero: true
+        }
       }
     ]
   }

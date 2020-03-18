@@ -72,7 +72,7 @@
               />
             </template>
           </q-td>
-
+          <!-- Solución a error donde no se muestran los articulos -->
           <q-td key="categoria" :props="props">{{ props.row.categoria.nombre }}</q-td>
 
           <q-td key="codigo" :props="props">{{ props.row.codigo }}</q-td>
@@ -329,6 +329,8 @@ export default {
   },
   created () {
     this.listar()
+  },
+  mounted () {
     this.selectCategoria()
   },
   computed: {
